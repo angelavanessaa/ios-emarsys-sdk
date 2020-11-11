@@ -181,11 +181,12 @@
         }
     } else if (status == UNAuthorizationStatusNotDetermined) {
         authorizationStatus = @"notDetermined";
-    } else if (@available(iOS 14.0, *)) {
-        if (status == UNAuthorizationStatusEphemeral) {
-            authorizationStatus = @"ephemeral";
-        }
-    }
+    } 
+//     else if (@available(iOS 14.0, *)) {
+//         if (status == UNAuthorizationStatusEphemeral) {
+//             authorizationStatus = @"ephemeral";
+//         }
+//     }
     return authorizationStatus;
 }
 
